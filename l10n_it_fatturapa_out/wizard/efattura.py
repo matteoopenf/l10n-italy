@@ -269,13 +269,17 @@ class EFatturaOut:
             the invoice."""
 
             if line.display_type in ("line_section", "line_note"):
-                # find a product line, with taxes, if possible
+                # find a non-zero tax, if possible
                 tax_lines = line.move_id.line_ids.filtered(
-                    lambda line: line.tax_ids and line.product_id
+                    lambda line: line.tax_ids
+
                 )
                 if tax_lines:
                     return tax_lines[0].tax_ids[0]
-            return line.tax_ids[0]
+            if line.tax_ids[0]:
+                return line.tax_ids[0]
+            else:
+                return False
 
         if self.partner_id.commercial_partner_id.is_pa:
             # check value code
