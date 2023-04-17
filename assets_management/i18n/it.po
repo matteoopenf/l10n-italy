@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 05:37+0000\n"
-"PO-Revision-Date: 2021-12-17 13:39+0000\n"
-"Last-Translator: Lorenzo Battistini <lb@takobi.online>\n"
+"PO-Revision-Date: 2023-04-12 15:32+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. module: assets_management
 #: model_terms:ir.ui.view,arch_db:assets_management.template_asset_journal_body
@@ -649,12 +649,12 @@ msgstr "Cespiti"
 #: model:ir.model.fields,field_description:assets_management.field_account_move_line__asset_accounting_info_ids
 #: model:ir.ui.menu,name:assets_management.menu_asset_accounting_info
 msgid "Assets Accounting Info"
-msgstr "Info contabili"
+msgstr "Informazioni contabili cespiti"
 
 #. module: assets_management
 #: model:ir.actions.act_window,name:assets_management.action_asset_depreciation_mode
 msgid "Assets Depreciation Mode"
-msgstr "Metodi ammortamento"
+msgstr "Metodi ammortamento cespiti"
 
 #. module: assets_management
 #: model:ir.actions.act_window,name:assets_management.action_asset_depreciation_type
@@ -686,10 +686,11 @@ msgstr "Gestione cespiti"
 #: code:addons/assets_management/report/asset_previsional.py:315
 #, python-format
 msgid "Assets Previsional Depreciations "
-msgstr "Ammortamenti previsionali "
+msgstr "Ammortamenti previsionali cespiti "
 
 #. module: assets_management
 #: model_terms:ir.ui.view,arch_db:assets_management.asset_search_view
+#, fuzzy
 msgid "Assets asset"
 msgstr "Beni ammortizzabili"
 
@@ -798,8 +799,8 @@ msgid ""
 "Before creating new categories, please complete the assets' configuration "
 "for both depreciation types and modes."
 msgstr ""
-"Prima di creare nuove categorie, completare la configurazione per i metodi e "
-"la natura di ammortamento."
+"Prima di creare nuove categorie, completare la configurazione dei cespiti "
+"sia per le tipologie che per le modalità di ammortamento."
 
 #. module: assets_management
 #: model_terms:ir.ui.view,arch_db:assets_management.wizard_account_move_mange_asset_form_view
@@ -970,6 +971,9 @@ msgid ""
 "chosen types:\n"
 "{}"
 msgstr ""
+"Impossibile aggiornare i seguenti cespiti, contengono ammortamenti più "
+"recenti per le tipologie scelte:\n"
+"{}"
 
 #. module: assets_management
 #: code:addons/assets_management/models/asset_depreciation.py:321
@@ -979,6 +983,9 @@ msgid ""
 "chosen date and types:\n"
 "{}"
 msgstr ""
+"Impossibile aggiornare i seguenti cespiti, contengono ammortamenti "
+"confermati per data e tipologie scelte:\n"
+"{}"
 
 #. module: assets_management
 #: selection:asset.depreciation.line,move_type:0
@@ -1663,12 +1670,12 @@ msgstr ""
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_channel_ids
 msgid "Followers (Channels)"
-msgstr "Followers (Canali)"
+msgstr "Seguito da (canali)"
 
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Followers (Partner)"
+msgstr "Seguito da (partner)"
 
 #. module: assets_management
 #: code:addons/assets_management/models/asset_depreciation_line.py:171
@@ -1880,12 +1887,12 @@ msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
 #. module: assets_management
 #: model:ir.model.fields,help:assets_management.field_asset_asset__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: assets_management
 #: model:ir.model.fields,help:assets_management.field_asset_asset__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se selezionato, alcuni messaggi presentano un errore di consegna."
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: assets_management
 #: selection:asset.depreciation.line,move_type:0
@@ -1992,7 +1999,7 @@ msgstr "Fatture"
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_is_follower
 msgid "Is Follower"
-msgstr "È Follower"
+msgstr "Sta seguendo"
 
 #. module: assets_management
 #: model:ir.model,name:assets_management.model_account_journal
@@ -2750,7 +2757,7 @@ msgstr "Importo residuo"
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__activity_user_id
 msgid "Responsible User"
-msgstr "Utente Responsabile"
+msgstr "Utente responsabile"
 
 #. module: assets_management
 #: selection:wizard.account.move.manage.asset,move_type:0
@@ -2844,10 +2851,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Stato basato sulle attività:\n"
-"In ritardo: la data pianificata è scaduta\n"
-"Oggi: la data dell'attività è oggi\n"
-"Pianificata: attività future."
+"Stato in base alle attività\n"
+"Scaduto: la data richiesta è trascorsa\n"
+"Oggi: la data attività è oggi\n"
+"Pianificato: attività future."
 
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__supplier_id
@@ -2889,8 +2896,9 @@ msgid ""
 "The assets you are trying to delete are currently linked to accounting info. "
 "Please remove them if necessary before removing these assets:\n"
 msgstr ""
-"Stai cercando di cancellare registrazioni collegate al cespite. Occore "
-"rimuoverle per completare l'operazione:\n"
+"I cespiti che si sta tentando di eliminare sono attualmente collegati a "
+"registrazioni contabili. Se necessario, rimuoverle prima di eliminare i "
+"cespiti:\n"
 
 #. module: assets_management
 #: code:addons/assets_management/models/asset_depreciation_line.py:161
@@ -2983,12 +2991,12 @@ msgstr "Cespite non definito"
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_unread
 msgid "Unread Messages"
-msgstr "Messaggi Non Letti"
+msgstr "Messaggi non letti"
 
 #. module: assets_management
 #: model:ir.model.fields,field_description:assets_management.field_asset_asset__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr "Contatore di messaggi non letti"
+msgstr "Numero messaggi non letti"
 
 #. module: assets_management
 #: model_terms:ir.ui.view,arch_db:assets_management.wizard_account_move_mange_asset_form_view
@@ -3078,7 +3086,7 @@ msgstr "Messaggi sito web"
 #. module: assets_management
 #: model:ir.model.fields,help:assets_management.field_asset_asset__website_message_ids
 msgid "Website communication history"
-msgstr "Storico comunicazione sito"
+msgstr "Cronologia comunicazioni sito web"
 
 #. module: assets_management
 #: model:ir.model,name:assets_management.model_wizard_asset_journal_report
@@ -3231,12 +3239,12 @@ msgstr "o"
 #. module: assets_management
 #: model:ir.model,name:assets_management.model_report_assets_management_report_asset_journal_xlsx
 msgid "report.assets_management.report_asset_journal_xlsx"
-msgstr ""
+msgstr "report.assets_management.report_asset_journal_xlsx"
 
 #. module: assets_management
 #: model:ir.model,name:assets_management.model_report_assets_management_report_asset_previsional_xlsx
 msgid "report.assets_management.report_asset_previsional_xlsx"
-msgstr ""
+msgstr "report.assets_management.report_asset_previsional_xlsx"
 
 #. module: assets_management
 #: model:ir.model,name:assets_management.model_report_asset_journal

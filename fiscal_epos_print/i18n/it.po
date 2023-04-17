@@ -379,6 +379,13 @@ msgstr "Non fiscale aperto"
 
 #. module: fiscal_epos_print
 #. openerp-web
+#: code:addons/fiscal_epos_print/static/src/js/epson_epos_print.js:430
+#, python-format
+msgid "Not paid"
+msgstr ""
+
+#. module: fiscal_epos_print
+#. openerp-web
 #: code:addons/fiscal_epos_print/static/src/js/epson_epos_print.js:44
 #, python-format
 msgid "Offline (end of paper or open cover)"
@@ -619,6 +626,14 @@ msgstr "Ristampa ultimo scontrino"
 #, python-format
 msgid "Reprint Last Receipt?"
 msgstr "Ristampare ultimo scontrino?"
+
+#. module: fiscal_epos_print
+#: code:addons/fiscal_epos_print/models/point_of_sale.py:34
+#, python-format
+msgid ""
+"Reprint cannot be done for a fiscal printer yet.\n"
+"Please disable 'Reprint Orders' or unset 'Printer IP Address'."
+msgstr ""
 
 #. module: fiscal_epos_print
 #. openerp-web
